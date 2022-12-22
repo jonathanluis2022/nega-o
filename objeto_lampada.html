@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Parte II</title>
+</head>
+<body>
+   <h2>Exemplo objeto lâmpada</h2>
+
+    <script>
+
+        const objLampada = {
+            fabricante: "ELGIN",
+            color: "white",
+            potencia: "10w", 
+            isOn: false,
+            trocarOnOff: function(){ //metodo dentro do obj
+                if(objLampada.isOn){
+                    console.log("desligar");
+                }else{
+                    console.log("ligar");
+                }
+                objLampada.isOn = !objLampada.isOn; /*objLampada.isOn a lampada esta desligada , quando ela for (!objLampada.isOn) diferente de desligada 
+                pois entao ela vai ser ligada */
+            } 
+        }; 
+                
+        objLampada.trocarOnOff();
+
+</script>
+</body>
+</html>
